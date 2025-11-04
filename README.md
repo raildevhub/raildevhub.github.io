@@ -33,17 +33,20 @@ raildevhub-web/
 │   └── favicon.svg            # Site favicon
 ├── src/
 │   ├── components/
-│   │   ├── Header.astro       # Navigation header
-│   │   └── Footer.astro       # Site footer
+│   │   ├── Header.astro       # Navigation header with auto-hide
+│   │   ├── Footer.astro       # Site footer
+│   │   ├── BottomNav.astro    # Mobile bottom navigation
+│   │   └── ThemeToggle.astro  # Dark/light mode toggle
 │   ├── layouts/
 │   │   └── BaseLayout.astro   # Base page layout
 │   ├── pages/
 │   │   ├── index.astro        # Home page
 │   │   ├── about.astro        # About the team
 │   │   ├── expertise.astro    # Technologies & expertise
-│   │   └── projects.astro     # Featured projects
+│   │   ├── projects.astro     # Featured projects
+│   │   └── stories.astro      # Transformation stories
 │   └── styles/
-│       └── global.css         # Global styles
+│       └── global.css         # Global styles & utilities
 ├── package.json
 ├── astro.config.mjs           # Astro configuration
 ├── tailwind.config.mjs        # TailwindCSS configuration
@@ -132,6 +135,23 @@ The website embodies a professional, modern corporate identity with:
 - **Clean & Professional Design:** Modern layouts with smooth animations
 - **Responsive Design:** Mobile-first approach ensuring excellent experience on all devices
 - **Accessibility:** Clear typography, good contrast ratios, semantic HTML
+- **Dark Mode Support:** Automatic system preference detection with manual toggle
+
+### Mobile Features
+
+- **Bottom Navigation Bar:** Touch-friendly navigation for mobile and tablet devices (hidden on desktop)
+- **Auto-Hide Header:** Header automatically hides on scroll down for more screen space, reappears on scroll up
+- **Touch Optimization:** All interactive elements meet the 44x44px minimum touch target size
+- **Responsive Breakpoints:**
+  - Mobile: < 640px
+  - Tablet: 640px - 1023px
+  - Desktop: ≥ 1024px
+- **Safe Area Support:** Compatible with devices with notches and home indicators
+
+📖 **Detailed Documentation:**
+- `MOBILE_RESPONSIVE_GUIDE.md` - Complete mobile responsiveness implementation guide
+- `LLM_PROJECT_GENERATION_GUIDE.md` - How to generate great projects using AI/LLMs
+- `DEPLOYMENT.md` - Comprehensive GitHub Pages deployment guide
 
 ## Domain Focus
 
