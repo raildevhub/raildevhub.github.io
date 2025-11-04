@@ -1,0 +1,381 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<BaseLayout title="Our Expertise - RailDevHub" description="Explore our comprehensive expertise in AI and software engineering technologies">
+  <Header />
+
+  <!-- Hero Section -->
+  <section class="pt-32 pb-16 bg-gradient-to-br from-primary-50 via-white to-blue-50">
+    <div class="section-container">
+      <div class="max-w-4xl mx-auto text-center">
+        <h1 class="text-5xl md:text-6xl font-display font-bold text-railway-steel mb-6">
+          Our Expertise
+        </h1>
+        <p class="text-xl text-gray-600 leading-relaxed">
+          A comprehensive suite of cutting-edge AI and software engineering technologies powering railway innovation
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- AI Technologies Section -->
+  <section class="py-20 bg-white">
+    <div class="section-container">
+      <div class="mb-16">
+        <div class="flex items-center mb-6">
+          <div class="w-16 h-16 bg-primary-600 rounded-xl flex items-center justify-center mr-4">
+            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
+            </svg>
+          </div>
+          <div>
+            <h2 class="text-4xl font-display font-bold text-railway-steel">Artificial Intelligence</h2>
+            <p class="text-gray-600 mt-2">Advanced AI solutions for intelligent railway systems</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <!-- LLM -->
+        <div class="bg-gradient-to-br from-white to-primary-50 border-2 border-primary-100 rounded-2xl p-8 hover:shadow-xl transition-all duration-300">
+          <div class="flex items-start">
+            <div class="flex-shrink-0 w-12 h-12 bg-primary-600 rounded-lg flex items-center justify-center">
+              <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z" />
+              </svg>
+            </div>
+            <div class="ml-4 flex-1">
+              <h3 class="text-2xl font-bold text-railway-steel mb-3">Large Language Models (LLM)</h3>
+              <p class="text-gray-600 mb-4">
+                Implementing state-of-the-art language models for natural language processing, automated documentation, and intelligent chatbots for railway operations.
+              </p>
+              <ul class="space-y-2">
+                <li class="flex items-start text-gray-700">
+                  <svg class="w-5 h-5 text-primary-600 mr-2 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+                  </svg>
+                  Intelligent query systems
+                </li>
+                <li class="flex items-start text-gray-700">
+                  <svg class="w-5 h-5 text-primary-600 mr-2 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+                  </svg>
+                  Automated report generation
+                </li>
+                <li class="flex items-start text-gray-700">
+                  <svg class="w-5 h-5 text-primary-600 mr-2 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+                  </svg>
+                  Multilingual support
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- AI Agents -->
+        <div class="bg-gradient-to-br from-white to-primary-50 border-2 border-primary-100 rounded-2xl p-8 hover:shadow-xl transition-all duration-300">
+          <div class="flex items-start">
+            <div class="flex-shrink-0 w-12 h-12 bg-primary-600 rounded-lg flex items-center justify-center">
+              <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4" />
+              </svg>
+            </div>
+            <div class="ml-4 flex-1">
+              <h3 class="text-2xl font-bold text-railway-steel mb-3">AI Agents</h3>
+              <p class="text-gray-600 mb-4">
+                Autonomous intelligent agents that monitor, analyze, and optimize railway operations in real-time.
+              </p>
+              <ul class="space-y-2">
+                <li class="flex items-start text-gray-700">
+                  <svg class="w-5 h-5 text-primary-600 mr-2 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+                  </svg>
+                  Predictive maintenance
+                </li>
+                <li class="flex items-start text-gray-700">
+                  <svg class="w-5 h-5 text-primary-600 mr-2 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+                  </svg>
+                  Anomaly detection
+                </li>
+                <li class="flex items-start text-gray-700">
+                  <svg class="w-5 h-5 text-primary-600 mr-2 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+                  </svg>
+                  Autonomous decision-making
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- MCP -->
+        <div class="bg-gradient-to-br from-white to-primary-50 border-2 border-primary-100 rounded-2xl p-8 hover:shadow-xl transition-all duration-300">
+          <div class="flex items-start">
+            <div class="flex-shrink-0 w-12 h-12 bg-primary-600 rounded-lg flex items-center justify-center">
+              <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01" />
+              </svg>
+            </div>
+            <div class="ml-4 flex-1">
+              <h3 class="text-2xl font-bold text-railway-steel mb-3">Multi-Criteria Planning (MCP)</h3>
+              <p class="text-gray-600 mb-4">
+                Advanced planning algorithms considering multiple factors for optimal resource allocation and scheduling.
+              </p>
+              <ul class="space-y-2">
+                <li class="flex items-start text-gray-700">
+                  <svg class="w-5 h-5 text-primary-600 mr-2 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+                  </svg>
+                  Train scheduling optimization
+                </li>
+                <li class="flex items-start text-gray-700">
+                  <svg class="w-5 h-5 text-primary-600 mr-2 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+                  </svg>
+                  Resource management
+                </li>
+                <li class="flex items-start text-gray-700">
+                  <svg class="w-5 h-5 text-primary-600 mr-2 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+                  </svg>
+                  Cost-benefit analysis
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- A2A -->
+        <div class="bg-gradient-to-br from-white to-primary-50 border-2 border-primary-100 rounded-2xl p-8 hover:shadow-xl transition-all duration-300">
+          <div class="flex items-start">
+            <div class="flex-shrink-0 w-12 h-12 bg-primary-600 rounded-lg flex items-center justify-center">
+              <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4" />
+              </svg>
+            </div>
+            <div class="ml-4 flex-1">
+              <h3 class="text-2xl font-bold text-railway-steel mb-3">Agent-to-Agent (A2A)</h3>
+              <p class="text-gray-600 mb-4">
+                Seamless communication and coordination between multiple AI agents for complex railway operations.
+              </p>
+              <ul class="space-y-2">
+                <li class="flex items-start text-gray-700">
+                  <svg class="w-5 h-5 text-primary-600 mr-2 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+                  </svg>
+                  Multi-agent coordination
+                </li>
+                <li class="flex items-start text-gray-700">
+                  <svg class="w-5 h-5 text-primary-600 mr-2 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+                  </svg>
+                  Distributed decision-making
+                </li>
+                <li class="flex items-start text-gray-700">
+                  <svg class="w-5 h-5 text-primary-600 mr-2 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+                  </svg>
+                  Real-time collaboration
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Big Data -->
+        <div class="bg-gradient-to-br from-white to-primary-50 border-2 border-primary-100 rounded-2xl p-8 hover:shadow-xl transition-all duration-300 md:col-span-2">
+          <div class="flex items-start">
+            <div class="flex-shrink-0 w-12 h-12 bg-primary-600 rounded-lg flex items-center justify-center">
+              <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 7v10c0 2.21 3.582 4 8 4s8-1.79 8-4V7M4 7c0 2.21 3.582 4 8 4s8-1.79 8-4M4 7c0-2.21 3.582-4 8-4s8 1.79 8 4m0 5c0 2.21-3.582 4-8 4s-8-1.79-8-4" />
+              </svg>
+            </div>
+            <div class="ml-4 flex-1">
+              <h3 class="text-2xl font-bold text-railway-steel mb-3">Big Data Analytics</h3>
+              <p class="text-gray-600 mb-4">
+                Processing and analyzing massive volumes of railway data for insights, trends, and data-driven decision-making.
+              </p>
+              <div class="grid md:grid-cols-2 gap-4">
+                <ul class="space-y-2">
+                  <li class="flex items-start text-gray-700">
+                    <svg class="w-5 h-5 text-primary-600 mr-2 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                      <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+                    </svg>
+                    Real-time data processing
+                  </li>
+                  <li class="flex items-start text-gray-700">
+                    <svg class="w-5 h-5 text-primary-600 mr-2 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                      <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+                    </svg>
+                    Predictive analytics
+                  </li>
+                </ul>
+                <ul class="space-y-2">
+                  <li class="flex items-start text-gray-700">
+                    <svg class="w-5 h-5 text-primary-600 mr-2 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                      <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+                    </svg>
+                    Machine learning models
+                  </li>
+                  <li class="flex items-start text-gray-700">
+                    <svg class="w-5 h-5 text-primary-600 mr-2 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                      <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+                    </svg>
+                    Business intelligence dashboards
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Software Engineering Section -->
+  <section class="py-20 bg-gray-50">
+    <div class="section-container">
+      <div class="mb-16">
+        <div class="flex items-center mb-6">
+          <div class="w-16 h-16 bg-railway-signal rounded-xl flex items-center justify-center mr-4">
+            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" />
+            </svg>
+          </div>
+          <div>
+            <h2 class="text-4xl font-display font-bold text-railway-steel">Software Engineering</h2>
+            <p class="text-gray-600 mt-2">Robust, scalable, and modern software architecture</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- Java & SpringBoot -->
+        <div class="bg-white border-2 border-gray-100 rounded-2xl p-8 hover:shadow-xl transition-all duration-300">
+          <h3 class="text-xl font-bold text-railway-steel mb-4">Java & SpringBoot</h3>
+          <p class="text-gray-600 mb-4">Enterprise-grade backend development with industry-standard frameworks</p>
+          <div class="flex flex-wrap gap-2">
+            <span class="px-3 py-1 bg-primary-50 text-primary-700 rounded-full text-sm font-medium">Spring Security</span>
+            <span class="px-3 py-1 bg-primary-50 text-primary-700 rounded-full text-sm font-medium">JPA/Hibernate</span>
+            <span class="px-3 py-1 bg-primary-50 text-primary-700 rounded-full text-sm font-medium">REST APIs</span>
+          </div>
+        </div>
+
+        <!-- React -->
+        <div class="bg-white border-2 border-gray-100 rounded-2xl p-8 hover:shadow-xl transition-all duration-300">
+          <h3 class="text-xl font-bold text-railway-steel mb-4">React</h3>
+          <p class="text-gray-600 mb-4">Modern, responsive user interfaces with cutting-edge frontend technology</p>
+          <div class="flex flex-wrap gap-2">
+            <span class="px-3 py-1 bg-primary-50 text-primary-700 rounded-full text-sm font-medium">TypeScript</span>
+            <span class="px-3 py-1 bg-primary-50 text-primary-700 rounded-full text-sm font-medium">Redux</span>
+            <span class="px-3 py-1 bg-primary-50 text-primary-700 rounded-full text-sm font-medium">Next.js</span>
+          </div>
+        </div>
+
+        <!-- Microservices -->
+        <div class="bg-white border-2 border-gray-100 rounded-2xl p-8 hover:shadow-xl transition-all duration-300">
+          <h3 class="text-xl font-bold text-railway-steel mb-4">Microservices</h3>
+          <p class="text-gray-600 mb-4">Scalable, distributed architecture for complex railway systems</p>
+          <div class="flex flex-wrap gap-2">
+            <span class="px-3 py-1 bg-primary-50 text-primary-700 rounded-full text-sm font-medium">Service Mesh</span>
+            <span class="px-3 py-1 bg-primary-50 text-primary-700 rounded-full text-sm font-medium">API Gateway</span>
+            <span class="px-3 py-1 bg-primary-50 text-primary-700 rounded-full text-sm font-medium">Event-Driven</span>
+          </div>
+        </div>
+
+        <!-- Postgres -->
+        <div class="bg-white border-2 border-gray-100 rounded-2xl p-8 hover:shadow-xl transition-all duration-300">
+          <h3 class="text-xl font-bold text-railway-steel mb-4">PostgreSQL</h3>
+          <p class="text-gray-600 mb-4">Robust relational database for critical railway data</p>
+          <div class="flex flex-wrap gap-2">
+            <span class="px-3 py-1 bg-primary-50 text-primary-700 rounded-full text-sm font-medium">ACID Compliance</span>
+            <span class="px-3 py-1 bg-primary-50 text-primary-700 rounded-full text-sm font-medium">Replication</span>
+            <span class="px-3 py-1 bg-primary-50 text-primary-700 rounded-full text-sm font-medium">PostGIS</span>
+          </div>
+        </div>
+
+        <!-- MongoDB -->
+        <div class="bg-white border-2 border-gray-100 rounded-2xl p-8 hover:shadow-xl transition-all duration-300">
+          <h3 class="text-xl font-bold text-railway-steel mb-4">MongoDB</h3>
+          <p class="text-gray-600 mb-4">Flexible NoSQL database for dynamic and unstructured data</p>
+          <div class="flex flex-wrap gap-2">
+            <span class="px-3 py-1 bg-primary-50 text-primary-700 rounded-full text-sm font-medium">Sharding</span>
+            <span class="px-3 py-1 bg-primary-50 text-primary-700 rounded-full text-sm font-medium">Aggregation</span>
+            <span class="px-3 py-1 bg-primary-50 text-primary-700 rounded-full text-sm font-medium">Atlas</span>
+          </div>
+        </div>
+
+        <!-- Kubernetes -->
+        <div class="bg-white border-2 border-gray-100 rounded-2xl p-8 hover:shadow-xl transition-all duration-300">
+          <h3 class="text-xl font-bold text-railway-steel mb-4">Kubernetes</h3>
+          <p class="text-gray-600 mb-4">Container orchestration for scalable and resilient deployments</p>
+          <div class="flex flex-wrap gap-2">
+            <span class="px-3 py-1 bg-primary-50 text-primary-700 rounded-full text-sm font-medium">Auto-scaling</span>
+            <span class="px-3 py-1 bg-primary-50 text-primary-700 rounded-full text-sm font-medium">Load Balancing</span>
+            <span class="px-3 py-1 bg-primary-50 text-primary-700 rounded-full text-sm font-medium">Helm</span>
+          </div>
+        </div>
+
+        <!-- Docker -->
+        <div class="bg-white border-2 border-gray-100 rounded-2xl p-8 hover:shadow-xl transition-all duration-300">
+          <h3 class="text-xl font-bold text-railway-steel mb-4">Docker</h3>
+          <p class="text-gray-600 mb-4">Containerization for consistent development and deployment</p>
+          <div class="flex flex-wrap gap-2">
+            <span class="px-3 py-1 bg-primary-50 text-primary-700 rounded-full text-sm font-medium">Multi-stage</span>
+            <span class="px-3 py-1 bg-primary-50 text-primary-700 rounded-full text-sm font-medium">Compose</span>
+            <span class="px-3 py-1 bg-primary-50 text-primary-700 rounded-full text-sm font-medium">Registry</span>
+          </div>
+        </div>
+
+        <!-- Linux -->
+        <div class="bg-white border-2 border-gray-100 rounded-2xl p-8 hover:shadow-xl transition-all duration-300">
+          <h3 class="text-xl font-bold text-railway-steel mb-4">Linux</h3>
+          <p class="text-gray-600 mb-4">Reliable infrastructure and system administration</p>
+          <div class="flex flex-wrap gap-2">
+            <span class="px-3 py-1 bg-primary-50 text-primary-700 rounded-full text-sm font-medium">Ubuntu</span>
+            <span class="px-3 py-1 bg-primary-50 text-primary-700 rounded-full text-sm font-medium">RHEL</span>
+            <span class="px-3 py-1 bg-primary-50 text-primary-700 rounded-full text-sm font-medium">Security</span>
+          </div>
+        </div>
+
+        <!-- Elasticsearch -->
+        <div class="bg-white border-2 border-gray-100 rounded-2xl p-8 hover:shadow-xl transition-all duration-300">
+          <h3 class="text-xl font-bold text-railway-steel mb-4">Elasticsearch</h3>
+          <p class="text-gray-600 mb-4">Full-text search and analytics for massive railway data</p>
+          <div class="flex flex-wrap gap-2">
+            <span class="px-3 py-1 bg-primary-50 text-primary-700 rounded-full text-sm font-medium">Kibana</span>
+            <span class="px-3 py-1 bg-primary-50 text-primary-700 rounded-full text-sm font-medium">Logstash</span>
+            <span class="px-3 py-1 bg-primary-50 text-primary-700 rounded-full text-sm font-medium">Beats</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="py-20 bg-white">
+    <div class="section-container">
+      <div class="text-center max-w-3xl mx-auto">
+        <h2 class="text-3xl md:text-4xl font-display font-bold text-railway-steel mb-6">
+          See Our Expertise in Action
+        </h2>
+        <p class="text-xl text-gray-600 mb-8">
+          Explore our projects to see how we apply these technologies to solve real-world railway challenges
+        </p>
+        <a href="/projects" class="btn-primary">
+          View Projects
+          <svg class="ml-2 w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6" />
+          </svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <Footer />
+</BaseLayout>
