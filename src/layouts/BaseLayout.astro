@@ -26,8 +26,22 @@ const { title, description = "RailDevHub - Combining the power of AI and softwar
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet">
 
   <title>{title}</title>
+
+  <script is:inline>
+    // Set theme before page renders to prevent flash
+    const getThemePreference = () => {
+      if (typeof localStorage !== 'undefined' && localStorage.getItem('theme')) {
+        return localStorage.getItem('theme');
+      }
+      return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+    };
+    const theme = getThemePreference();
+    if (theme === 'dark') {
+      document.documentElement.classList.add('dark');
+    }
+  </script>
 </head>
-<body class="bg-white text-gray-900 font-sans antialiased">
+<body class="bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-100 font-sans antialiased transition-colors duration-200">
   <slot />
 </body>
 </html>

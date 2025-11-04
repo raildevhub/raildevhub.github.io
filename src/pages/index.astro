@@ -8,44 +8,55 @@ import Footer from '../components/Footer.astro';
   <Header />
 
   <!-- Hero Section -->
-  <section class="relative pt-32 pb-20 overflow-hidden bg-gradient-to-br from-primary-50 via-white to-blue-50">
+  <section class="relative pt-32 pb-20 overflow-hidden bg-gradient-to-br from-primary-50 via-white to-blue-50 dark:from-gray-900 dark:via-gray-800 dark:to-gray-900 transition-colors duration-200">
     <div class="section-container">
-      <div class="max-w-4xl mx-auto text-center">
-        <h1 class="text-5xl md:text-6xl lg:text-7xl font-display font-bold text-railway-steel mb-6 leading-tight">
-          Building the Future of <span class="text-primary-600">Railway Technology</span>
+      <div class="max-w-5xl mx-auto text-center">
+        <div class="inline-block bg-white/80 dark:bg-gray-800/80 backdrop-blur-sm rounded-full px-6 py-2 mb-6 shadow-lg">
+          <span class="text-primary-600 dark:text-primary-400 font-semibold">Where Steel Rails Meet Silicon Dreams</span>
+        </div>
+        <h1 class="text-5xl md:text-6xl lg:text-7xl font-display font-bold text-railway-steel dark:text-white mb-6 leading-tight">
+          We're Building the <span class="bg-gradient-to-r from-primary-600 to-railway-signal dark:from-primary-400 dark:to-red-400 bg-clip-text text-transparent">Smartest Railway Network</span> in the World
         </h1>
-        <p class="text-xl md:text-2xl text-gray-600 mb-8 leading-relaxed">
-          Combining the power of AI and software to build amazing projects
+        <p class="text-xl md:text-2xl text-gray-700 dark:text-gray-300 mb-6 leading-relaxed max-w-3xl mx-auto">
+          15 visionaries combining <strong>AI, IoT, Big Data, and Software Engineering</strong> to transform Turkey's railways into an intelligent, self-optimizing transportation network
         </p>
+        <div class="bg-white/60 dark:bg-gray-800/60 backdrop-blur-sm rounded-xl p-6 mb-8 max-w-2xl mx-auto">
+          <p class="text-lg text-railway-steel dark:text-gray-200 italic">
+            "Every sensor, every algorithm, every line of code—designed to make millions of journeys safer, faster, and smarter."
+          </p>
+        </div>
         <div class="flex flex-col sm:flex-row gap-4 justify-center">
           <a href="/projects" class="btn-primary">
-            View Our Projects
+            See What We're Building
+            <svg class="ml-2 w-5 h-5 inline" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6" />
+            </svg>
           </a>
-          <a href="/about" class="btn-secondary">
-            Learn More
+          <a href="/stories" class="btn-secondary">
+            Read Our Journey
           </a>
         </div>
       </div>
 
       <!-- Stats -->
       <div class="mt-20 grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto">
-        <div class="text-center p-6 bg-white rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300">
-          <div class="text-4xl font-bold text-primary-600 mb-2">15+</div>
-          <div class="text-gray-600 font-medium">Expert Team Members</div>
+        <div class="text-center p-6 bg-white dark:bg-gray-800 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300">
+          <div class="text-4xl font-bold text-primary-600 dark:text-primary-400 mb-2">15+</div>
+          <div class="text-gray-600 dark:text-gray-300 font-medium">Expert Team Members</div>
         </div>
-        <div class="text-center p-6 bg-white rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300">
-          <div class="text-4xl font-bold text-primary-600 mb-2">10+</div>
-          <div class="text-gray-600 font-medium">Technologies</div>
+        <div class="text-center p-6 bg-white dark:bg-gray-800 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300">
+          <div class="text-4xl font-bold text-primary-600 dark:text-primary-400 mb-2">10+</div>
+          <div class="text-gray-600 dark:text-gray-300 font-medium">Technologies</div>
         </div>
-        <div class="text-center p-6 bg-white rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300">
-          <div class="text-4xl font-bold text-primary-600 mb-2">2</div>
-          <div class="text-gray-600 font-medium">Major Platforms</div>
+        <div class="text-center p-6 bg-white dark:bg-gray-800 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300">
+          <div class="text-4xl font-bold text-primary-600 dark:text-primary-400 mb-2">2</div>
+          <div class="text-gray-600 dark:text-gray-300 font-medium">Major Platforms</div>
         </div>
       </div>
 
       <!-- Stories Callout -->
       <div class="mt-12 text-center">
-        <a href="/stories" class="inline-flex items-center text-primary-600 hover:text-primary-700 font-semibold text-lg transition-colors duration-200 group">
+        <a href="/stories" class="inline-flex items-center text-primary-600 dark:text-primary-400 hover:text-primary-700 dark:hover:text-primary-300 font-semibold text-lg transition-colors duration-200 group">
           Read Our Transformation Stories
           <svg class="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6" />
@@ -55,72 +66,227 @@ import Footer from '../components/Footer.astro';
     </div>
 
     <!-- Background decoration -->
-    <div class="absolute top-0 right-0 w-96 h-96 bg-primary-100 rounded-full mix-blend-multiply filter blur-3xl opacity-50 animate-pulse"></div>
-    <div class="absolute bottom-0 left-0 w-96 h-96 bg-blue-100 rounded-full mix-blend-multiply filter blur-3xl opacity-50 animate-pulse" style="animation-delay: 2s;"></div>
+    <div class="absolute top-0 right-0 w-96 h-96 bg-primary-100 dark:bg-primary-900/20 rounded-full mix-blend-multiply dark:mix-blend-screen filter blur-3xl opacity-50 animate-pulse"></div>
+    <div class="absolute bottom-0 left-0 w-96 h-96 bg-blue-100 dark:bg-blue-900/20 rounded-full mix-blend-multiply dark:mix-blend-screen filter blur-3xl opacity-50 animate-pulse" style="animation-delay: 2s;"></div>
   </section>
 
   <!-- Core Values Section -->
-  <section class="py-20 bg-white">
+  <section class="py-20 bg-white dark:bg-gray-900 transition-colors duration-200">
     <div class="section-container">
       <div class="text-center mb-16">
-        <h2 class="text-4xl md:text-5xl font-display font-bold text-railway-steel mb-4">
+        <h2 class="text-4xl md:text-5xl font-display font-bold text-railway-steel dark:text-white mb-4">
           Our Core Values
         </h2>
-        <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+        <p class="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
           We are committed to delivering excellence through our fundamental principles
         </p>
       </div>
 
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
         <!-- Security -->
-        <div class="group p-8 bg-white border-2 border-gray-100 rounded-2xl hover:border-primary-500 hover:shadow-xl transition-all duration-300">
-          <div class="w-14 h-14 bg-primary-100 rounded-lg flex items-center justify-center mb-6 group-hover:bg-primary-600 transition-colors duration-300">
-            <svg class="w-7 h-7 text-primary-600 group-hover:text-white transition-colors duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <div class="group p-8 bg-white dark:bg-gray-800 border-2 border-gray-100 dark:border-gray-700 rounded-2xl hover:border-primary-500 dark:hover:border-primary-400 hover:shadow-xl transition-all duration-300">
+          <div class="w-14 h-14 bg-primary-100 dark:bg-primary-900/30 rounded-lg flex items-center justify-center mb-6 group-hover:bg-primary-600 dark:group-hover:bg-primary-600 transition-colors duration-300">
+            <svg class="w-7 h-7 text-primary-600 dark:text-primary-400 group-hover:text-white transition-colors duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
             </svg>
           </div>
-          <h3 class="text-xl font-bold text-railway-steel mb-3">Security First</h3>
-          <p class="text-gray-600">
+          <h3 class="text-xl font-bold text-railway-steel dark:text-white mb-3">Security First</h3>
+          <p class="text-gray-600 dark:text-gray-300">
             Enterprise-grade security measures to protect critical railway infrastructure and data
           </p>
         </div>
 
         <!-- Performance -->
-        <div class="group p-8 bg-white border-2 border-gray-100 rounded-2xl hover:border-primary-500 hover:shadow-xl transition-all duration-300">
-          <div class="w-14 h-14 bg-primary-100 rounded-lg flex items-center justify-center mb-6 group-hover:bg-primary-600 transition-colors duration-300">
-            <svg class="w-7 h-7 text-primary-600 group-hover:text-white transition-colors duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <div class="group p-8 bg-white dark:bg-gray-800 border-2 border-gray-100 dark:border-gray-700 rounded-2xl hover:border-primary-500 dark:hover:border-primary-400 hover:shadow-xl transition-all duration-300">
+          <div class="w-14 h-14 bg-primary-100 dark:bg-primary-900/30 rounded-lg flex items-center justify-center mb-6 group-hover:bg-primary-600 dark:group-hover:bg-primary-600 transition-colors duration-300">
+            <svg class="w-7 h-7 text-primary-600 dark:text-primary-400 group-hover:text-white transition-colors duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
             </svg>
           </div>
-          <h3 class="text-xl font-bold text-railway-steel mb-3">High Performance</h3>
-          <p class="text-gray-600">
+          <h3 class="text-xl font-bold text-railway-steel dark:text-white mb-3">High Performance</h3>
+          <p class="text-gray-600 dark:text-gray-300">
             Optimized systems capable of handling large-scale railway operations in real-time
           </p>
         </div>
 
         <!-- Modern Design -->
-        <div class="group p-8 bg-white border-2 border-gray-100 rounded-2xl hover:border-primary-500 hover:shadow-xl transition-all duration-300">
-          <div class="w-14 h-14 bg-primary-100 rounded-lg flex items-center justify-center mb-6 group-hover:bg-primary-600 transition-colors duration-300">
-            <svg class="w-7 h-7 text-primary-600 group-hover:text-white transition-colors duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <div class="group p-8 bg-white dark:bg-gray-800 border-2 border-gray-100 dark:border-gray-700 rounded-2xl hover:border-primary-500 dark:hover:border-primary-400 hover:shadow-xl transition-all duration-300">
+          <div class="w-14 h-14 bg-primary-100 dark:bg-primary-900/30 rounded-lg flex items-center justify-center mb-6 group-hover:bg-primary-600 dark:group-hover:bg-primary-600 transition-colors duration-300">
+            <svg class="w-7 h-7 text-primary-600 dark:text-primary-400 group-hover:text-white transition-colors duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zm0 0h12a2 2 0 002-2v-4a2 2 0 00-2-2h-2.343M11 7.343l1.657-1.657a2 2 0 012.828 0l2.829 2.829a2 2 0 010 2.828l-8.486 8.485M7 17h.01" />
             </svg>
           </div>
-          <h3 class="text-xl font-bold text-railway-steel mb-3">Modern Design</h3>
-          <p class="text-gray-600">
+          <h3 class="text-xl font-bold text-railway-steel dark:text-white mb-3">Modern Design</h3>
+          <p class="text-gray-600 dark:text-gray-300">
             Intuitive, user-friendly interfaces built with the latest design principles
           </p>
         </div>
 
         <!-- Quality -->
-        <div class="group p-8 bg-white border-2 border-gray-100 rounded-2xl hover:border-primary-500 hover:shadow-xl transition-all duration-300">
-          <div class="w-14 h-14 bg-primary-100 rounded-lg flex items-center justify-center mb-6 group-hover:bg-primary-600 transition-colors duration-300">
-            <svg class="w-7 h-7 text-primary-600 group-hover:text-white transition-colors duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <div class="group p-8 bg-white dark:bg-gray-800 border-2 border-gray-100 dark:border-gray-700 rounded-2xl hover:border-primary-500 dark:hover:border-primary-400 hover:shadow-xl transition-all duration-300">
+          <div class="w-14 h-14 bg-primary-100 dark:bg-primary-900/30 rounded-lg flex items-center justify-center mb-6 group-hover:bg-primary-600 dark:group-hover:bg-primary-600 transition-colors duration-300">
+            <svg class="w-7 h-7 text-primary-600 dark:text-primary-400 group-hover:text-white transition-colors duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
             </svg>
           </div>
-          <h3 class="text-xl font-bold text-railway-steel mb-3">Quality Products</h3>
-          <p class="text-gray-600">
+          <h3 class="text-xl font-bold text-railway-steel dark:text-white mb-3">Quality Products</h3>
+          <p class="text-gray-600 dark:text-gray-300">
             Rigorous testing and best practices ensure reliable, production-ready solutions
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Innovation Lab Section -->
+  <section class="py-20 bg-white dark:bg-gray-900 transition-colors duration-200">
+    <div class="section-container">
+      <div class="text-center mb-16">
+        <div class="inline-block bg-railway-signal/10 dark:bg-railway-signal/20 text-railway-signal dark:text-red-400 rounded-full px-6 py-2 mb-4 font-semibold">
+          🔬 Innovation Lab
+        </div>
+        <h2 class="text-4xl md:text-5xl font-display font-bold text-railway-steel dark:text-white mb-4">
+          What We're Cooking in the Lab
+        </h2>
+        <p class="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
+          Beyond our production systems, we're experimenting with tomorrow's technologies today
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- Smart Track Sensors -->
+        <div class="group bg-gradient-to-br from-gray-50 to-white dark:from-gray-800 dark:to-gray-800/50 rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300 border-2 border-gray-100 dark:border-gray-700 hover:border-primary-500 dark:hover:border-primary-400">
+          <div class="flex items-center justify-between mb-4">
+            <div class="w-12 h-12 bg-primary-600 dark:bg-primary-700 rounded-xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+              <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+              </svg>
+            </div>
+            <span class="text-xs font-semibold px-3 py-1 bg-primary-100 dark:bg-primary-900/30 text-primary-700 dark:text-primary-400 rounded-full">Prototype</span>
+          </div>
+          <h3 class="text-xl font-bold text-railway-steel dark:text-white mb-3">Smart Track Sensors</h3>
+          <p class="text-gray-600 dark:text-gray-300 mb-4 leading-relaxed">
+            IoT sensors embedded every 100 meters, detecting micro-fractures and temperature anomalies before they become problems.
+          </p>
+          <div class="flex flex-wrap gap-2">
+            <span class="text-xs px-2 py-1 bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 rounded">IoT</span>
+            <span class="text-xs px-2 py-1 bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 rounded">Predictive ML</span>
+            <span class="text-xs px-2 py-1 bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 rounded">Edge Computing</span>
+          </div>
+        </div>
+
+        <!-- AI Station Assistant -->
+        <div class="group bg-gradient-to-br from-gray-50 to-white dark:from-gray-800 dark:to-gray-800/50 rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300 border-2 border-gray-100 dark:border-gray-700 hover:border-railway-signal dark:hover:border-red-400">
+          <div class="flex items-center justify-between mb-4">
+            <div class="w-12 h-12 bg-railway-signal dark:bg-red-600 rounded-xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+              <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z" />
+              </svg>
+            </div>
+            <span class="text-xs font-semibold px-3 py-1 bg-railway-signal/10 dark:bg-red-900/30 text-railway-signal dark:text-red-400 rounded-full">Beta Testing</span>
+          </div>
+          <h3 class="text-xl font-bold text-railway-steel dark:text-white mb-3">AI Station Assistant</h3>
+          <p class="text-gray-600 dark:text-gray-300 mb-4 leading-relaxed">
+            Natural language AI helping passengers plan journeys, answering questions in 5 languages, predicting delays before they're announced.
+          </p>
+          <div class="flex flex-wrap gap-2">
+            <span class="text-xs px-2 py-1 bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 rounded">LLM</span>
+            <span class="text-xs px-2 py-1 bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 rounded">NLP</span>
+            <span class="text-xs px-2 py-1 bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 rounded">Voice AI</span>
+          </div>
+        </div>
+
+        <!-- Blockchain Safety Records -->
+        <div class="group bg-gradient-to-br from-gray-50 to-white dark:from-gray-800 dark:to-gray-800/50 rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300 border-2 border-gray-100 dark:border-gray-700 hover:border-railway-safety dark:hover:border-yellow-400">
+          <div class="flex items-center justify-between mb-4">
+            <div class="w-12 h-12 bg-railway-safety dark:bg-yellow-600 rounded-xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+              <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
+              </svg>
+            </div>
+            <span class="text-xs font-semibold px-3 py-1 bg-railway-safety/10 dark:bg-yellow-900/30 text-railway-safety dark:text-yellow-400 rounded-full">Research</span>
+          </div>
+          <h3 class="text-xl font-bold text-railway-steel dark:text-white mb-3">Blockchain Safety Records</h3>
+          <p class="text-gray-600 dark:text-gray-300 mb-4 leading-relaxed">
+            Immutable, transparent safety and maintenance records verified by blockchain, building trust with every journey.
+          </p>
+          <div class="flex flex-wrap gap-2">
+            <span class="text-xs px-2 py-1 bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 rounded">Blockchain</span>
+            <span class="text-xs px-2 py-1 bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 rounded">Smart Contracts</span>
+            <span class="text-xs px-2 py-1 bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 rounded">Audit Trail</span>
+          </div>
+        </div>
+
+        <!-- Energy Optimization AI -->
+        <div class="group bg-gradient-to-br from-gray-50 to-white dark:from-gray-800 dark:to-gray-800/50 rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300 border-2 border-gray-100 dark:border-gray-700 hover:border-green-500 dark:hover:border-green-400">
+          <div class="flex items-center justify-between mb-4">
+            <div class="w-12 h-12 bg-green-600 dark:bg-green-700 rounded-xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+              <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+              </svg>
+            </div>
+            <span class="text-xs font-semibold px-3 py-1 bg-green-100 dark:bg-green-900/30 text-green-700 dark:text-green-400 rounded-full">Pilot</span>
+          </div>
+          <h3 class="text-xl font-bold text-railway-steel dark:text-white mb-3">Carbon-Neutral Routing</h3>
+          <p class="text-gray-600 dark:text-gray-300 mb-4 leading-relaxed">
+            AI that optimizes train routes and speeds to minimize energy consumption while maintaining schedules—towards zero-emission railways.
+          </p>
+          <div class="flex flex-wrap gap-2">
+            <span class="text-xs px-2 py-1 bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 rounded">Optimization</span>
+            <span class="text-xs px-2 py-1 bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 rounded">Sustainability</span>
+            <span class="text-xs px-2 py-1 bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 rounded">Green AI</span>
+          </div>
+        </div>
+
+        <!-- Autonomous Monitoring -->
+        <div class="group bg-gradient-to-br from-gray-50 to-white dark:from-gray-800 dark:to-gray-800/50 rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300 border-2 border-gray-100 dark:border-gray-700 hover:border-purple-500 dark:hover:border-purple-400">
+          <div class="flex items-center justify-between mb-4">
+            <div class="w-12 h-12 bg-purple-600 dark:bg-purple-700 rounded-xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+              <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
+              </svg>
+            </div>
+            <span class="text-xs font-semibold px-3 py-1 bg-purple-100 dark:bg-purple-900/30 text-purple-700 dark:text-purple-400 rounded-full">Development</span>
+          </div>
+          <h3 class="text-xl font-bold text-railway-steel dark:text-white mb-3">Computer Vision Safety</h3>
+          <p class="text-gray-600 dark:text-gray-300 mb-4 leading-relaxed">
+            AI-powered cameras monitoring platforms, tracks, and trains 24/7, detecting hazards and preventing accidents before they happen.
+          </p>
+          <div class="flex flex-wrap gap-2">
+            <span class="text-xs px-2 py-1 bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 rounded">Computer Vision</span>
+            <span class="text-xs px-2 py-1 bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 rounded">Real-time</span>
+            <span class="text-xs px-2 py-1 bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 rounded">Safety</span>
+          </div>
+        </div>
+
+        <!-- Digital Twin -->
+        <div class="group bg-gradient-to-br from-gray-50 to-white dark:from-gray-800 dark:to-gray-800/50 rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300 border-2 border-gray-100 dark:border-gray-700 hover:border-blue-500 dark:hover:border-blue-400">
+          <div class="flex items-center justify-between mb-4">
+            <div class="w-12 h-12 bg-blue-600 dark:bg-blue-700 rounded-xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+              <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 5a1 1 0 011-1h4a1 1 0 011 1v7a1 1 0 01-1 1H5a1 1 0 01-1-1V5zM14 5a1 1 0 011-1h4a1 1 0 011 1v7a1 1 0 01-1 1h-4a1 1 0 01-1-1V5zM4 17a1 1 0 011-1h4a1 1 0 011 1v2a1 1 0 01-1 1H5a1 1 0 01-1-1v-2zM14 17a1 1 0 011-1h4a1 1 0 011 1v2a1 1 0 01-1 1h-4a1 1 0 01-1-1v-2z" />
+              </svg>
+            </div>
+            <span class="text-xs font-semibold px-3 py-1 bg-blue-100 dark:bg-blue-900/30 text-blue-700 dark:text-blue-400 rounded-full">Concept</span>
+          </div>
+          <h3 class="text-xl font-bold text-railway-steel dark:text-white mb-3">Digital Twin Network</h3>
+          <p class="text-gray-600 dark:text-gray-300 mb-4 leading-relaxed">
+            A complete virtual replica of Turkey's railway network—test scenarios, simulate disasters, optimize operations in a risk-free digital environment.
+          </p>
+          <div class="flex flex-wrap gap-2">
+            <span class="text-xs px-2 py-1 bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 rounded">Simulation</span>
+            <span class="text-xs px-2 py-1 bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 rounded">3D Modeling</span>
+            <span class="text-xs px-2 py-1 bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 rounded">Testing</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="mt-16 text-center">
+        <div class="inline-block bg-gradient-to-r from-primary-600 to-railway-signal text-white rounded-2xl p-8 max-w-3xl">
+          <h3 class="text-2xl font-bold mb-3">The Lab Never Sleeps</h3>
+          <p class="text-lg text-gray-100">
+            Every week, we're testing new ideas. Some fail spectacularly. Some change everything. That's innovation.
           </p>
         </div>
       </div>
@@ -229,40 +395,40 @@ import Footer from '../components/Footer.astro';
   </section>
 
   <!-- Featured Stories Section -->
-  <section class="py-20 bg-gray-50">
+  <section class="py-20 bg-gray-50 dark:bg-gray-800 transition-colors duration-200">
     <div class="section-container">
       <div class="text-center mb-16">
-        <h2 class="text-4xl md:text-5xl font-display font-bold text-railway-steel mb-4">
+        <h2 class="text-4xl md:text-5xl font-display font-bold text-railway-steel dark:text-white mb-4">
           Our Transformation Stories
         </h2>
-        <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+        <p class="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
           Behind every project is an inspiring journey from vision to reality
         </p>
       </div>
 
       <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-6xl mx-auto">
         <!-- RayNext Story Card -->
-        <div class="group bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 border-2 border-gray-100 hover:border-primary-500">
-          <div class="bg-gradient-to-br from-primary-600 to-primary-700 p-6">
+        <div class="group bg-white dark:bg-gray-700 rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 border-2 border-gray-100 dark:border-gray-600 hover:border-primary-500 dark:hover:border-primary-400">
+          <div class="bg-gradient-to-br from-primary-600 to-primary-700 dark:from-primary-700 dark:to-primary-800 p-6">
             <div class="text-white">
-              <div class="inline-block px-3 py-1 bg-white/20 rounded-full text-sm font-semibold mb-3">
+              <div class="inline-block px-3 py-1 bg-white/20 dark:bg-white/10 rounded-full text-sm font-semibold mb-3">
                 Digital Transformation
               </div>
               <h3 class="text-2xl font-bold mb-2">RayNext Story</h3>
-              <p class="text-primary-100">The Future of Digital Railway</p>
+              <p class="text-primary-100 dark:text-primary-200">The Future of Digital Railway</p>
             </div>
           </div>
           <div class="p-6">
-            <p class="text-gray-700 mb-4 leading-relaxed">
+            <p class="text-gray-700 dark:text-gray-300 mb-4 leading-relaxed">
               A journey from Ankara to Istanbul - building the bridge between traditional railway operations and the digital future. From type approval to train driver management, everything digitalized.
             </p>
-            <div class="flex items-center text-sm text-gray-600 mb-4">
+            <div class="flex items-center text-sm text-gray-600 dark:text-gray-400 mb-4">
               <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
               </svg>
               Ankara → Istanbul
             </div>
-            <a href="/stories#raynext" class="inline-flex items-center text-primary-600 hover:text-primary-700 font-semibold transition-colors duration-200 group-hover:translate-x-1">
+            <a href="/stories#raynext" class="inline-flex items-center text-primary-600 dark:text-primary-400 hover:text-primary-700 dark:hover:text-primary-300 font-semibold transition-colors duration-200 group-hover:translate-x-1">
               Read the Story
               <svg class="ml-2 w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6" />
@@ -272,27 +438,27 @@ import Footer from '../components/Footer.astro';
         </div>
 
         <!-- RayData Story Card -->
-        <div class="group bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 border-2 border-gray-100 hover:border-railway-signal">
-          <div class="bg-gradient-to-br from-railway-signal to-red-600 p-6">
+        <div class="group bg-white dark:bg-gray-700 rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 border-2 border-gray-100 dark:border-gray-600 hover:border-railway-signal dark:hover:border-red-400">
+          <div class="bg-gradient-to-br from-railway-signal to-red-600 dark:from-red-600 dark:to-red-700 p-6">
             <div class="text-white">
-              <div class="inline-block px-3 py-1 bg-white/20 rounded-full text-sm font-semibold mb-3">
+              <div class="inline-block px-3 py-1 bg-white/20 dark:bg-white/10 rounded-full text-sm font-semibold mb-3">
                 Data Analytics
               </div>
               <h3 class="text-2xl font-bold mb-2">RayData Story</h3>
-              <p class="text-red-100">The Power of Railway Data</p>
+              <p class="text-red-100 dark:text-red-200">The Power of Railway Data</p>
             </div>
           </div>
           <div class="p-6">
-            <p class="text-gray-700 mb-4 leading-relaxed">
+            <p class="text-gray-700 dark:text-gray-300 mb-4 leading-relaxed">
               A data revolution rising from Istanbul, empowering decision-makers in Ankara. 3 dashboards, 100+ reports, and the transformation of numbers into actionable insights for Turkey's railways.
             </p>
-            <div class="flex items-center text-sm text-gray-600 mb-4">
+            <div class="flex items-center text-sm text-gray-600 dark:text-gray-400 mb-4">
               <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
               </svg>
               Istanbul → Ankara
             </div>
-            <a href="/stories#raydata" class="inline-flex items-center text-railway-signal hover:text-red-600 font-semibold transition-colors duration-200 group-hover:translate-x-1">
+            <a href="/stories#raydata" class="inline-flex items-center text-railway-signal dark:text-red-400 hover:text-red-600 dark:hover:text-red-300 font-semibold transition-colors duration-200 group-hover:translate-x-1">
               Read the Story
               <svg class="ml-2 w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6" />
@@ -314,17 +480,17 @@ import Footer from '../components/Footer.astro';
   </section>
 
   <!-- CTA Section -->
-  <section class="py-20 bg-white">
+  <section class="py-20 bg-white dark:bg-gray-900 transition-colors duration-200">
     <div class="section-container">
-      <div class="bg-gradient-to-r from-primary-600 to-primary-700 rounded-3xl shadow-2xl overflow-hidden">
+      <div class="bg-gradient-to-r from-primary-600 to-primary-700 dark:from-primary-700 dark:to-primary-800 rounded-3xl shadow-2xl overflow-hidden">
         <div class="px-8 py-16 md:px-16 md:py-20 text-center">
           <h2 class="text-3xl md:text-4xl font-display font-bold text-white mb-4">
             Ready to Transform Railway Operations?
           </h2>
-          <p class="text-xl text-primary-100 mb-8 max-w-2xl mx-auto">
+          <p class="text-xl text-primary-100 dark:text-primary-200 mb-8 max-w-2xl mx-auto">
             Discover how our innovative solutions are revolutionizing the railway industry
           </p>
-          <a href="/projects" class="inline-flex items-center px-8 py-4 bg-white text-primary-600 text-lg font-semibold rounded-lg hover:bg-gray-50 transition-all duration-200 shadow-lg hover:shadow-xl">
+          <a href="/projects" class="inline-flex items-center px-8 py-4 bg-white dark:bg-gray-100 text-primary-600 dark:text-primary-700 text-lg font-semibold rounded-lg hover:bg-gray-50 dark:hover:bg-gray-200 transition-all duration-200 shadow-lg hover:shadow-xl">
             View Our Projects
             <svg class="ml-2 w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6" />

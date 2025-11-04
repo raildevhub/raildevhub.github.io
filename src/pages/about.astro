@@ -8,84 +8,229 @@ import Footer from '../components/Footer.astro';
   <Header />
 
   <!-- Hero Section -->
-  <section class="pt-32 pb-16 bg-gradient-to-br from-primary-50 via-white to-blue-50">
+  <section class="pt-32 pb-16 bg-gradient-to-br from-primary-50 via-white to-blue-50 dark:from-gray-900 dark:via-gray-800 dark:to-gray-900 transition-colors duration-200">
     <div class="section-container">
       <div class="max-w-4xl mx-auto text-center">
-        <h1 class="text-5xl md:text-6xl font-display font-bold text-railway-steel mb-6">
+        <h1 class="text-5xl md:text-6xl font-display font-bold text-railway-steel dark:text-white mb-6">
           About RailDevHub
         </h1>
-        <p class="text-2xl text-primary-600 font-semibold mb-4">
-          Combining the power of AI and software to build amazing projects
+        <p class="text-2xl text-primary-600 dark:text-primary-400 font-semibold mb-4">
+          Where Steel Rails Meet Silicon Dreams
         </p>
-        <p class="text-xl text-gray-600 leading-relaxed">
-          We are a specialized team of 15 experts dedicated to revolutionizing railway operations through innovative technology
+        <p class="text-xl text-gray-600 dark:text-gray-300 leading-relaxed mb-6">
+          We are a specialized team of 15 visionaries who believe that the future of transportation is being written in code, analyzed by AI, and powered by data streaming through thousands of kilometers of steel rails.
         </p>
+        <div class="inline-block bg-white/80 dark:bg-gray-800/80 backdrop-blur-sm rounded-xl p-6 shadow-lg">
+          <p class="text-lg italic text-railway-steel dark:text-gray-200">
+            "Every train that crosses Turkey carries not just passengers, but our dreams of a smarter, safer, and more connected future."
+          </p>
+        </div>
       </div>
     </div>
   </section>
 
-  <!-- Mission Section -->
-  <section class="py-20 bg-white">
+  <!-- Origin Story Section -->
+  <section class="py-20 bg-white dark:bg-gray-900 transition-colors duration-200">
     <div class="section-container">
       <div class="max-w-5xl mx-auto">
         <div class="text-center mb-16">
-          <h2 class="text-4xl md:text-5xl font-display font-bold text-railway-steel mb-6">
-            Our Mission
+          <h2 class="text-4xl md:text-5xl font-display font-bold text-railway-steel dark:text-white mb-6">
+            Our Story: The Birth of a Revolution
           </h2>
-          <p class="text-xl text-gray-600 leading-relaxed max-w-3xl mx-auto">
-            To transform the railway industry through cutting-edge AI and software engineering, delivering secure, high-performance, and modern solutions that set new standards in railway management and operations.
+          <div class="prose prose-lg max-w-none">
+            <div class="bg-gradient-to-r from-primary-600 to-primary-700 dark:from-primary-700 dark:to-primary-800 rounded-2xl p-8 text-white mb-8">
+              <p class="text-xl leading-relaxed mb-4">
+                It started with a simple question: <strong>"What if we could see the future of every train before it departs?"</strong>
+              </p>
+              <p class="text-lg text-primary-100 dark:text-primary-200 leading-relaxed">
+                In a small office in Istanbul, overlooking the Bosphorus where continents meet, 15 engineers, data scientists, and railway enthusiasts gathered. They shared a vision that seemed impossible: to transform Turkey's vast railway network into the world's smartest, most efficient transportation system.
+              </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-8 my-12">
+              <div class="bg-gray-50 dark:bg-gray-800 rounded-xl p-8">
+                <h3 class="text-2xl font-bold text-railway-steel dark:text-white mb-4">🚂 The Railway Heritage</h3>
+                <p class="text-gray-700 dark:text-gray-300 leading-relaxed">
+                  Some of us grew up next to train stations, falling asleep to the rhythmic sound of wheels on tracks. Others were engineers who spent years maintaining locomotives. We all shared one thing: a deep love for railways and a frustration with outdated systems.
+                </p>
+              </div>
+
+              <div class="bg-gray-50 dark:bg-gray-800 rounded-xl p-8">
+                <h3 class="text-2xl font-bold text-railway-steel dark:text-white mb-4">💡 The Digital Awakening</h3>
+                <p class="text-gray-700 dark:text-gray-300 leading-relaxed">
+                  We witnessed how AI transformed industries—from healthcare to finance. Yet railways, the backbone of nations, still relied on paper forms and manual processes. We knew we had to change this.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="text-center mb-16">
+          <h2 class="text-4xl md:text-5xl font-display font-bold text-railway-steel dark:text-white mb-6">
+            Our Mission: Rewriting the Future of Mobility
+          </h2>
+          <p class="text-xl text-gray-600 dark:text-gray-300 leading-relaxed max-w-3xl mx-auto mb-8">
+            To transform every aspect of railway operations—from the sensors on tracks to the AI models predicting maintenance needs, from IoT devices in stations to the platforms empowering decision-makers—into a seamlessly connected, intelligent ecosystem.
           </p>
+          <div class="inline-block bg-railway-steel dark:bg-gray-800 text-white rounded-xl p-6 text-left max-w-2xl">
+            <p class="text-lg font-semibold mb-2">We're not just building software.</p>
+            <p class="text-gray-300 dark:text-gray-400">We're crafting the nervous system of modern transportation, where every sensor, every data point, every algorithm works in harmony to move millions safely, efficiently, and sustainably.</p>
+          </div>
         </div>
 
         <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-          <div class="bg-gradient-to-br from-primary-50 to-white border-2 border-primary-100 rounded-2xl p-8">
-            <div class="w-14 h-14 bg-primary-600 rounded-xl flex items-center justify-center mb-6">
+          <div class="bg-gradient-to-br from-primary-50 to-white dark:from-gray-800 dark:to-gray-800/50 border-2 border-primary-100 dark:border-gray-700 rounded-2xl p-8">
+            <div class="w-14 h-14 bg-primary-600 dark:bg-primary-700 rounded-xl flex items-center justify-center mb-6">
               <svg class="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
               </svg>
             </div>
-            <h3 class="text-2xl font-bold text-railway-steel mb-3">Innovation First</h3>
-            <p class="text-gray-600">
+            <h3 class="text-2xl font-bold text-railway-steel dark:text-white mb-3">Innovation First</h3>
+            <p class="text-gray-600 dark:text-gray-300">
               We constantly push boundaries by integrating the latest AI technologies and software development practices into railway operations, creating solutions that didn't exist before.
             </p>
           </div>
 
-          <div class="bg-gradient-to-br from-primary-50 to-white border-2 border-primary-100 rounded-2xl p-8">
-            <div class="w-14 h-14 bg-primary-600 rounded-xl flex items-center justify-center mb-6">
+          <div class="bg-gradient-to-br from-primary-50 to-white dark:from-gray-800 dark:to-gray-800/50 border-2 border-primary-100 dark:border-gray-700 rounded-2xl p-8">
+            <div class="w-14 h-14 bg-primary-600 dark:bg-primary-700 rounded-xl flex items-center justify-center mb-6">
               <svg class="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
               </svg>
             </div>
-            <h3 class="text-2xl font-bold text-railway-steel mb-3">Expert Team</h3>
-            <p class="text-gray-600">
+            <h3 class="text-2xl font-bold text-railway-steel dark:text-white mb-3">Expert Team</h3>
+            <p class="text-gray-600 dark:text-gray-300">
               Our team of 15 specialists brings together diverse expertise in AI, software engineering, DevOps, and railway domain knowledge to tackle complex challenges.
             </p>
           </div>
 
-          <div class="bg-gradient-to-br from-primary-50 to-white border-2 border-primary-100 rounded-2xl p-8">
-            <div class="w-14 h-14 bg-primary-600 rounded-xl flex items-center justify-center mb-6">
+          <div class="bg-gradient-to-br from-primary-50 to-white dark:from-gray-800 dark:to-gray-800/50 border-2 border-primary-100 dark:border-gray-700 rounded-2xl p-8">
+            <div class="w-14 h-14 bg-primary-600 dark:bg-primary-700 rounded-xl flex items-center justify-center mb-6">
               <svg class="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
               </svg>
             </div>
-            <h3 class="text-2xl font-bold text-railway-steel mb-3">Quality Focused</h3>
-            <p class="text-gray-600">
+            <h3 class="text-2xl font-bold text-railway-steel dark:text-white mb-3">Quality Focused</h3>
+            <p class="text-gray-600 dark:text-gray-300">
               Every solution we build adheres to the highest standards of security, performance, and reliability, ensuring production-ready systems that work flawlessly.
             </p>
           </div>
 
-          <div class="bg-gradient-to-br from-primary-50 to-white border-2 border-primary-100 rounded-2xl p-8">
-            <div class="w-14 h-14 bg-primary-600 rounded-xl flex items-center justify-center mb-6">
+          <div class="bg-gradient-to-br from-primary-50 to-white dark:from-gray-800 dark:to-gray-800/50 border-2 border-primary-100 dark:border-gray-700 rounded-2xl p-8">
+            <div class="w-14 h-14 bg-primary-600 dark:bg-primary-700 rounded-xl flex items-center justify-center mb-6">
               <svg class="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
               </svg>
             </div>
-            <h3 class="text-2xl font-bold text-railway-steel mb-3">European Standards</h3>
-            <p class="text-gray-600">
+            <h3 class="text-2xl font-bold text-railway-steel dark:text-white mb-3">European Standards</h3>
+            <p class="text-gray-600 dark:text-gray-300">
               All our projects comply with European railway standards and regulations, ensuring interoperability and adherence to international best practices.
             </p>
           </div>
         </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- What We're Building Section -->
+  <section class="py-20 bg-gray-50 dark:bg-gray-800 transition-colors duration-200">
+    <div class="section-container">
+      <div class="text-center mb-16">
+        <h2 class="text-4xl md:text-5xl font-display font-bold text-railway-steel dark:text-white mb-6">
+          What We're Building Today
+        </h2>
+        <p class="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
+          Our hands are deep in code, our minds in the future, and our hearts on the tracks
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-12">
+        <!-- Digital Platforms -->
+        <div class="bg-white dark:bg-gray-700 rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300 border-2 border-transparent hover:border-primary-500 dark:hover:border-primary-400">
+          <div class="w-16 h-16 bg-gradient-to-br from-primary-600 to-primary-700 dark:from-primary-700 dark:to-primary-800 rounded-xl flex items-center justify-center mb-6">
+            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2zM9 9h6v6H9V9z" />
+            </svg>
+          </div>
+          <h3 class="text-2xl font-bold text-railway-steel dark:text-white mb-4">Digital Platforms</h3>
+          <p class="text-gray-700 dark:text-gray-300 leading-relaxed mb-4">
+            RayNext and RayData are just the beginning. We're building the digital infrastructure that will power Turkey's railways for the next 50 years.
+          </p>
+          <ul class="space-y-2 text-gray-600 dark:text-gray-400">
+            <li class="flex items-start">
+              <span class="text-primary-600 dark:text-primary-400 mr-2">▸</span>
+              <span>Type approval & certification systems</span>
+            </li>
+            <li class="flex items-start">
+              <span class="text-primary-600 dark:text-primary-400 mr-2">▸</span>
+              <span>Real-time BI dashboards</span>
+            </li>
+            <li class="flex items-start">
+              <span class="text-primary-600 dark:text-primary-400 mr-2">▸</span>
+              <span>Predictive analytics engines</span>
+            </li>
+          </ul>
+        </div>
+
+        <!-- IoT & Sensors -->
+        <div class="bg-white dark:bg-gray-700 rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300 border-2 border-transparent hover:border-railway-signal dark:hover:border-red-400">
+          <div class="w-16 h-16 bg-gradient-to-br from-railway-signal to-red-600 dark:from-red-600 dark:to-red-700 rounded-xl flex items-center justify-center mb-6">
+            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
+            </svg>
+          </div>
+          <h3 class="text-2xl font-bold text-railway-steel dark:text-white mb-4">IoT & Smart Sensors</h3>
+          <p class="text-gray-700 dark:text-gray-300 leading-relaxed mb-4">
+            Thousands of sensors deployed across tracks, stations, and trains, all speaking to our AI brain in real-time.
+          </p>
+          <ul class="space-y-2 text-gray-600 dark:text-gray-400">
+            <li class="flex items-start">
+              <span class="text-railway-signal dark:text-red-400 mr-2">▸</span>
+              <span>Track condition monitoring</span>
+            </li>
+            <li class="flex items-start">
+              <span class="text-railway-signal dark:text-red-400 mr-2">▸</span>
+              <span>Environmental sensors in stations</span>
+            </li>
+            <li class="flex items-start">
+              <span class="text-railway-signal dark:text-red-400 mr-2">▸</span>
+              <span>Real-time train telemetry</span>
+            </li>
+          </ul>
+        </div>
+
+        <!-- AI & Machine Learning -->
+        <div class="bg-white dark:bg-gray-700 rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300 border-2 border-transparent hover:border-railway-safety dark:hover:border-yellow-400">
+          <div class="w-16 h-16 bg-gradient-to-br from-railway-safety to-yellow-600 dark:from-yellow-600 dark:to-yellow-700 rounded-xl flex items-center justify-center mb-6">
+            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+            </svg>
+          </div>
+          <h3 class="text-2xl font-bold text-railway-steel dark:text-white mb-4">AI-Powered Intelligence</h3>
+          <p class="text-gray-700 dark:text-gray-300 leading-relaxed mb-4">
+            Machine learning models that predict failures before they happen, optimize routes in milliseconds, and learn from every journey.
+          </p>
+          <ul class="space-y-2 text-gray-600 dark:text-gray-400">
+            <li class="flex items-start">
+              <span class="text-railway-safety dark:text-yellow-400 mr-2">▸</span>
+              <span>Predictive maintenance AI</span>
+            </li>
+            <li class="flex items-start">
+              <span class="text-railway-safety dark:text-yellow-400 mr-2">▸</span>
+              <span>Demand forecasting models</span>
+            </li>
+            <li class="flex items-start">
+              <span class="text-railway-safety dark:text-yellow-400 mr-2">▸</span>
+              <span>Anomaly detection systems</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="bg-gradient-to-r from-primary-600 via-railway-steel to-railway-signal dark:from-primary-700 dark:via-gray-800 dark:to-red-700 rounded-2xl p-8 text-white text-center">
+        <h3 class="text-3xl font-bold mb-4">The Invisible Infrastructure</h3>
+        <p class="text-xl text-gray-100 dark:text-gray-200 max-w-4xl mx-auto">
+          Behind every dashboard is a symphony of microservices. Behind every prediction is a neural network trained on millions of data points. Behind every safe journey is our code, running 24/7/365, ensuring that passengers reach their destinations safely.
+        </p>
       </div>
     </div>
   </section>
@@ -125,62 +270,62 @@ import Footer from '../components/Footer.astro';
   </section>
 
   <!-- Core Values Section -->
-  <section class="py-20 bg-white">
+  <section class="py-20 bg-white dark:bg-gray-900 transition-colors duration-200">
     <div class="section-container">
       <div class="text-center mb-16">
-        <h2 class="text-4xl md:text-5xl font-display font-bold text-railway-steel mb-6">
+        <h2 class="text-4xl md:text-5xl font-display font-bold text-railway-steel dark:text-white mb-6">
           Our Core Values
         </h2>
-        <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+        <p class="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
           The principles that guide everything we do
         </p>
       </div>
 
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-6xl mx-auto">
         <div class="text-center">
-          <div class="w-20 h-20 bg-primary-100 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:bg-primary-600 transition-colors duration-300">
-            <svg class="w-10 h-10 text-primary-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <div class="w-20 h-20 bg-primary-100 dark:bg-primary-900/30 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:bg-primary-600 transition-colors duration-300">
+            <svg class="w-10 h-10 text-primary-600 dark:text-primary-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
             </svg>
           </div>
-          <h3 class="text-2xl font-bold text-railway-steel mb-3">Security</h3>
-          <p class="text-gray-600">
+          <h3 class="text-2xl font-bold text-railway-steel dark:text-white mb-3">Security</h3>
+          <p class="text-gray-600 dark:text-gray-300">
             Enterprise-grade security measures protect critical infrastructure and sensitive data
           </p>
         </div>
 
         <div class="text-center">
-          <div class="w-20 h-20 bg-primary-100 rounded-2xl flex items-center justify-center mx-auto mb-6">
-            <svg class="w-10 h-10 text-primary-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <div class="w-20 h-20 bg-primary-100 dark:bg-primary-900/30 rounded-2xl flex items-center justify-center mx-auto mb-6">
+            <svg class="w-10 h-10 text-primary-600 dark:text-primary-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
             </svg>
           </div>
-          <h3 class="text-2xl font-bold text-railway-steel mb-3">Performance</h3>
-          <p class="text-gray-600">
+          <h3 class="text-2xl font-bold text-railway-steel dark:text-white mb-3">Performance</h3>
+          <p class="text-gray-600 dark:text-gray-300">
             Optimized systems handle large-scale operations in real-time without compromise
           </p>
         </div>
 
         <div class="text-center">
-          <div class="w-20 h-20 bg-primary-100 rounded-2xl flex items-center justify-center mx-auto mb-6">
-            <svg class="w-10 h-10 text-primary-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <div class="w-20 h-20 bg-primary-100 dark:bg-primary-900/30 rounded-2xl flex items-center justify-center mx-auto mb-6">
+            <svg class="w-10 h-10 text-primary-600 dark:text-primary-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zm0 0h12a2 2 0 002-2v-4a2 2 0 00-2-2h-2.343M11 7.343l1.657-1.657a2 2 0 012.828 0l2.829 2.829a2 2 0 010 2.828l-8.486 8.485M7 17h.01" />
             </svg>
           </div>
-          <h3 class="text-2xl font-bold text-railway-steel mb-3">Modern Design</h3>
-          <p class="text-gray-600">
+          <h3 class="text-2xl font-bold text-railway-steel dark:text-white mb-3">Modern Design</h3>
+          <p class="text-gray-600 dark:text-gray-300">
             Intuitive interfaces built with cutting-edge design principles and user experience
           </p>
         </div>
 
         <div class="text-center">
-          <div class="w-20 h-20 bg-primary-100 rounded-2xl flex items-center justify-center mx-auto mb-6">
-            <svg class="w-10 h-10 text-primary-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <div class="w-20 h-20 bg-primary-100 dark:bg-primary-900/30 rounded-2xl flex items-center justify-center mx-auto mb-6">
+            <svg class="w-10 h-10 text-primary-600 dark:text-primary-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
             </svg>
           </div>
-          <h3 class="text-2xl font-bold text-railway-steel mb-3">Quality</h3>
-          <p class="text-gray-600">
+          <h3 class="text-2xl font-bold text-railway-steel dark:text-white mb-3">Quality</h3>
+          <p class="text-gray-600 dark:text-gray-300">
             Rigorous testing and best practices ensure reliable, production-ready solutions
           </p>
         </div>
@@ -188,41 +333,173 @@ import Footer from '../components/Footer.astro';
     </div>
   </section>
 
+  <!-- Future Vision Section -->
+  <section class="py-20 bg-white dark:bg-gray-900 transition-colors duration-200">
+    <div class="section-container">
+      <div class="text-center mb-16">
+        <h2 class="text-4xl md:text-5xl font-display font-bold text-railway-steel dark:text-white mb-6">
+          The Future We're Building
+        </h2>
+        <p class="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto mb-8">
+          Our roadmap isn't just ambitious—it's revolutionary
+        </p>
+        <div class="inline-block bg-gradient-to-r from-primary-600 to-railway-signal dark:from-primary-700 dark:to-red-700 text-white rounded-xl p-6">
+          <p class="text-lg font-semibold">
+            By 2030, we aim to make Turkey's railway network the smartest in the world.
+          </p>
+        </div>
+      </div>
+
+      <div class="max-w-6xl mx-auto space-y-8">
+        <!-- Vision 2025-2026 -->
+        <div class="bg-gradient-to-br from-primary-50 to-white dark:from-gray-800 dark:to-gray-800/50 rounded-2xl p-8 border-2 border-primary-200 dark:border-gray-700 hover:border-primary-500 dark:hover:border-primary-400 transition-all duration-300">
+          <div class="flex items-start space-x-6">
+            <div class="flex-shrink-0 w-20 h-20 bg-primary-600 dark:bg-primary-700 rounded-2xl flex items-center justify-center text-white text-2xl font-bold">
+              2025
+            </div>
+            <div class="flex-1">
+              <h3 class="text-2xl font-bold text-railway-steel dark:text-white mb-3">The Foundation Year</h3>
+              <p class="text-gray-700 dark:text-gray-300 leading-relaxed mb-4">
+                RayNext and RayData go live. Digital transformation begins. Every form, every process, every decision becomes data-driven.
+              </p>
+              <div class="grid md:grid-cols-2 gap-4">
+                <div class="flex items-start">
+                  <span class="text-primary-600 dark:text-primary-400 text-xl mr-2">✓</span>
+                  <span class="text-gray-700 dark:text-gray-300">Full platform deployment</span>
+                </div>
+                <div class="flex items-start">
+                  <span class="text-primary-600 dark:text-primary-400 text-xl mr-2">✓</span>
+                  <span class="text-gray-700 dark:text-gray-300">10,000+ daily active users</span>
+                </div>
+                <div class="flex items-start">
+                  <span class="text-primary-600 dark:text-primary-400 text-xl mr-2">✓</span>
+                  <span class="text-gray-700 dark:text-gray-300">Real-time data streaming</span>
+                </div>
+                <div class="flex items-start">
+                  <span class="text-primary-600 dark:text-primary-400 text-xl mr-2">✓</span>
+                  <span class="text-gray-700 dark:text-gray-300">100+ reports & dashboards</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Vision 2026-2027 -->
+        <div class="bg-gradient-to-br from-railway-signal/10 to-white rounded-2xl p-8 border-2 border-railway-signal/30 hover:border-railway-signal transition-all duration-300">
+          <div class="flex items-start space-x-6">
+            <div class="flex-shrink-0 w-20 h-20 bg-railway-signal rounded-2xl flex items-center justify-center text-white text-2xl font-bold">
+              2027
+            </div>
+            <div class="flex-1">
+              <h3 class="text-2xl font-bold text-railway-steel mb-3">The Intelligence Layer</h3>
+              <p class="text-gray-700 leading-relaxed mb-4">
+                AI agents take control. Predictive maintenance saves millions. Autonomous decision systems optimize operations in real-time.
+              </p>
+              <div class="grid md:grid-cols-2 gap-4">
+                <div class="flex items-start">
+                  <span class="text-railway-signal text-xl mr-2">◆</span>
+                  <span class="text-gray-700">AI-powered predictive maintenance</span>
+                </div>
+                <div class="flex items-start">
+                  <span class="text-railway-signal text-xl mr-2">◆</span>
+                  <span class="text-gray-700">Autonomous scheduling optimization</span>
+                </div>
+                <div class="flex items-start">
+                  <span class="text-railway-signal text-xl mr-2">◆</span>
+                  <span class="text-gray-700">Real-time anomaly detection</span>
+                </div>
+                <div class="flex items-start">
+                  <span class="text-railway-signal text-xl mr-2">◆</span>
+                  <span class="text-gray-700">Smart energy management</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Vision 2028-2030 -->
+        <div class="bg-gradient-to-br from-railway-safety/10 to-white rounded-2xl p-8 border-2 border-railway-safety/30 hover:border-railway-safety transition-all duration-300">
+          <div class="flex items-start space-x-6">
+            <div class="flex-shrink-0 w-20 h-20 bg-railway-safety rounded-2xl flex items-center justify-center text-white text-2xl font-bold">
+              2030
+            </div>
+            <div class="flex-1">
+              <h3 class="text-2xl font-bold text-railway-steel mb-3">The Smart Railway Network</h3>
+              <p class="text-gray-700 leading-relaxed mb-4">
+                Every train, every track, every station becomes a node in an intelligent network. Turkey's railways set the global standard.
+              </p>
+              <div class="grid md:grid-cols-2 gap-4">
+                <div class="flex items-start">
+                  <span class="text-railway-safety text-xl mr-2">★</span>
+                  <span class="text-gray-700">Fully autonomous operations monitoring</span>
+                </div>
+                <div class="flex items-start">
+                  <span class="text-railway-safety text-xl mr-2">★</span>
+                  <span class="text-gray-700">Blockchain-verified safety records</span>
+                </div>
+                <div class="flex items-start">
+                  <span class="text-railway-safety text-xl mr-2">★</span>
+                  <span class="text-gray-700">Carbon-neutral operation optimization</span>
+                </div>
+                <div class="flex items-start">
+                  <span class="text-railway-safety text-xl mr-2">★</span>
+                  <span class="text-gray-700">Passenger experience AI</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="mt-16 text-center">
+        <div class="inline-block bg-railway-steel text-white rounded-2xl p-8 max-w-4xl">
+          <h3 class="text-3xl font-bold mb-4">Beyond 2030: The Dream</h3>
+          <p class="text-xl text-gray-200 leading-relaxed mb-4">
+            Imagine a railway network that predicts passenger needs before they know them. Where trains optimize their own routes. Where maintenance happens before failures occur. Where every journey is perfectly safe, efficient, and sustainable.
+          </p>
+          <p class="text-lg text-gray-300 italic">
+            That's not science fiction. That's our roadmap.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- Domain Focus Section -->
-  <section class="py-20 bg-gray-50">
+  <section class="py-20 bg-gray-50 dark:bg-gray-800 transition-colors duration-200">
     <div class="section-container">
       <div class="max-w-4xl mx-auto">
         <div class="text-center mb-12">
-          <h2 class="text-4xl md:text-5xl font-display font-bold text-railway-steel mb-6">
+          <h2 class="text-4xl md:text-5xl font-display font-bold text-railway-steel dark:text-white mb-6">
             Our Domain
           </h2>
-          <p class="text-xl text-gray-600 leading-relaxed">
+          <p class="text-xl text-gray-600 dark:text-gray-300 leading-relaxed">
             We specialize in the railway sector, focusing on comprehensive solutions for trains, passengers, stations, and operations management in compliance with European standards.
           </p>
         </div>
 
         <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
-          <div class="bg-white rounded-xl p-6 text-center shadow-md hover:shadow-lg transition-shadow duration-300">
+          <div class="bg-white dark:bg-gray-700 rounded-xl p-6 text-center shadow-md hover:shadow-lg transition-shadow duration-300">
             <div class="text-4xl mb-3">🚄</div>
-            <div class="font-semibold text-railway-steel">Trains</div>
+            <div class="font-semibold text-railway-steel dark:text-white">Trains</div>
           </div>
-          <div class="bg-white rounded-xl p-6 text-center shadow-md hover:shadow-lg transition-shadow duration-300">
+          <div class="bg-white dark:bg-gray-700 rounded-xl p-6 text-center shadow-md hover:shadow-lg transition-shadow duration-300">
             <div class="text-4xl mb-3">👥</div>
-            <div class="font-semibold text-railway-steel">Passengers</div>
+            <div class="font-semibold text-railway-steel dark:text-white">Passengers</div>
           </div>
-          <div class="bg-white rounded-xl p-6 text-center shadow-md hover:shadow-lg transition-shadow duration-300">
+          <div class="bg-white dark:bg-gray-700 rounded-xl p-6 text-center shadow-md hover:shadow-lg transition-shadow duration-300">
             <div class="text-4xl mb-3">🏢</div>
-            <div class="font-semibold text-railway-steel">Stations</div>
+            <div class="font-semibold text-railway-steel dark:text-white">Stations</div>
           </div>
-          <div class="bg-white rounded-xl p-6 text-center shadow-md hover:shadow-lg transition-shadow duration-300">
+          <div class="bg-white dark:bg-gray-700 rounded-xl p-6 text-center shadow-md hover:shadow-lg transition-shadow duration-300">
             <div class="text-4xl mb-3">⚙️</div>
-            <div class="font-semibold text-railway-steel">Operations</div>
+            <div class="font-semibold text-railway-steel dark:text-white">Operations</div>
           </div>
         </div>
 
-        <div class="mt-12 bg-gradient-to-r from-primary-600 to-primary-700 rounded-2xl p-8 text-white text-center">
+        <div class="mt-12 bg-gradient-to-r from-primary-600 to-primary-700 dark:from-primary-700 dark:to-primary-800 rounded-2xl p-8 text-white text-center">
           <h3 class="text-2xl font-bold mb-3">European Standards Compliance</h3>
-          <p class="text-lg text-primary-100">
+          <p class="text-lg text-primary-100 dark:text-primary-200">
             All our solutions are designed and implemented in accordance with European railway standards, ensuring interoperability, safety, and quality across borders.
           </p>
         </div>
@@ -231,13 +508,13 @@ import Footer from '../components/Footer.astro';
   </section>
 
   <!-- CTA Section -->
-  <section class="py-20 bg-white">
+  <section class="py-20 bg-white dark:bg-gray-900 transition-colors duration-200">
     <div class="section-container">
       <div class="text-center max-w-3xl mx-auto">
-        <h2 class="text-3xl md:text-4xl font-display font-bold text-railway-steel mb-6">
+        <h2 class="text-3xl md:text-4xl font-display font-bold text-railway-steel dark:text-white mb-6">
           Ready to See What We Can Do?
         </h2>
-        <p class="text-xl text-gray-600 mb-8">
+        <p class="text-xl text-gray-600 dark:text-gray-300 mb-8">
           Explore our projects and discover how we're transforming railway technology
         </p>
         <div class="flex flex-col sm:flex-row gap-4 justify-center">

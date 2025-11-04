@@ -1,4 +1,6 @@
 ---
+import ThemeToggle from './ThemeToggle.astro';
+
 const currentPath = Astro.url.pathname;
 
 const navLinks = [
@@ -10,7 +12,7 @@ const navLinks = [
 ];
 ---
 
-<header class="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-sm shadow-sm">
+<header class="fixed top-0 left-0 right-0 z-50 bg-white/95 dark:bg-railway-steel/95 backdrop-blur-sm shadow-sm transition-colors duration-200">
   <nav class="section-container py-4">
     <div class="flex items-center justify-between">
       <!-- Logo -->
@@ -19,35 +21,39 @@ const navLinks = [
           <div class="w-8 h-8 bg-primary-600 rounded transform group-hover:rotate-12 transition-transform duration-300"></div>
           <div class="w-8 h-8 bg-railway-signal rounded transform group-hover:-rotate-12 transition-transform duration-300"></div>
         </div>
-        <span class="text-2xl font-display font-bold text-railway-steel">RailDevHub</span>
+        <span class="text-2xl font-display font-bold text-railway-steel dark:text-white">RailDevHub</span>
       </a>
 
       <!-- Desktop Navigation -->
-      <div class="hidden md:flex items-center space-x-8">
+      <div class="hidden md:flex items-center space-x-6">
         {navLinks.map(link => (
           <a
             href={link.href}
             class:list={[
-              "text-sm font-medium transition-colors duration-200 hover:text-primary-600",
-              currentPath === link.href ? "text-primary-600" : "text-gray-700"
+              "text-sm font-medium transition-colors duration-200 hover:text-primary-600 dark:hover:text-primary-400",
+              currentPath === link.href ? "text-primary-600 dark:text-primary-400" : "text-gray-700 dark:text-gray-300"
             ]}
           >
             {link.label}
           </a>
         ))}
+        <ThemeToggle />
       </div>
 
-      <!-- Mobile Menu Button -->
-      <button
-        id="mobile-menu-button"
-        class="md:hidden inline-flex items-center justify-center p-2 rounded-md text-gray-700 hover:text-primary-600 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-primary-500"
-        aria-expanded="false"
-      >
-        <span class="sr-only">Open main menu</span>
-        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
-        </svg>
-      </button>
+      <!-- Mobile Menu Button & Theme Toggle -->
+      <div class="md:hidden flex items-center space-x-2">
+        <ThemeToggle />
+        <button
+          id="mobile-menu-button"
+          class="inline-flex items-center justify-center p-2 rounded-md text-gray-700 dark:text-gray-300 hover:text-primary-600 dark:hover:text-primary-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-primary-500 transition-colors duration-200"
+          aria-expanded="false"
+        >
+          <span class="sr-only">Open main menu</span>
+          <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+          </svg>
+        </button>
+      </div>
     </div>
 
     <!-- Mobile Menu -->
@@ -58,8 +64,8 @@ const navLinks = [
           class:list={[
             "block px-3 py-2 rounded-md text-base font-medium transition-colors duration-200",
             currentPath === link.href
-              ? "bg-primary-50 text-primary-600"
-              : "text-gray-700 hover:bg-gray-50 hover:text-primary-600"
+              ? "bg-primary-50 dark:bg-primary-900/30 text-primary-600 dark:text-primary-400"
+              : "text-gray-700 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-gray-700 hover:text-primary-600 dark:hover:text-primary-400"
           ]}
         >
           {link.label}
