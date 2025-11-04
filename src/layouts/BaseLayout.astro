@@ -1,5 +1,6 @@
 ---
 import '../styles/global.css';
+import BottomNav from '../components/BottomNav.astro';
 
 interface Props {
   title: string;
@@ -43,5 +44,6 @@ const { title, description = "RailDevHub - Combining the power of AI and softwar
 </head>
 <body class="bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-100 font-sans antialiased transition-colors duration-200">
   <slot />
+  <BottomNav />
 </body>
 </html>

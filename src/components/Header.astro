@@ -12,20 +12,20 @@ const navLinks = [
 ];
 ---
 
-<header class="fixed top-0 left-0 right-0 z-50 bg-white/95 dark:bg-railway-steel/95 backdrop-blur-sm shadow-sm transition-colors duration-200">
+<header id="main-header" class="fixed top-0 left-0 right-0 z-50 bg-white/95 dark:bg-railway-steel/95 backdrop-blur-sm shadow-sm transition-all duration-300">
   <nav class="section-container py-4">
     <div class="flex items-center justify-between">
       <!-- Logo -->
-      <a href="/" class="flex items-center space-x-3 group">
+      <a href="/" class="flex items-center space-x-2 sm:space-x-3 group">
         <div class="flex items-center space-x-1">
-          <div class="w-8 h-8 bg-primary-600 rounded transform group-hover:rotate-12 transition-transform duration-300"></div>
-          <div class="w-8 h-8 bg-railway-signal rounded transform group-hover:-rotate-12 transition-transform duration-300"></div>
+          <div class="w-6 h-6 sm:w-8 sm:h-8 bg-primary-600 rounded transform group-hover:rotate-12 transition-transform duration-300"></div>
+          <div class="w-6 h-6 sm:w-8 sm:h-8 bg-railway-signal rounded transform group-hover:-rotate-12 transition-transform duration-300"></div>
         </div>
-        <span class="text-2xl font-display font-bold text-railway-steel dark:text-white">RailDevHub</span>
+        <span class="text-xl sm:text-2xl font-display font-bold text-railway-steel dark:text-white">RailDevHub</span>
       </a>
 
       <!-- Desktop Navigation -->
-      <div class="hidden md:flex items-center space-x-6">
+      <div class="hidden lg:flex items-center space-x-6">
         {navLinks.map(link => (
           <a
             href={link.href}
@@ -40,48 +40,59 @@ const navLinks = [
         <ThemeToggle />
       </div>
 
-      <!-- Mobile Menu Button & Theme Toggle -->
-      <div class="md:hidden flex items-center space-x-2">
+      <!-- Tablet/Mobile Theme Toggle -->
+      <div class="lg:hidden flex items-center">
         <ThemeToggle />
-        <button
-          id="mobile-menu-button"
-          class="inline-flex items-center justify-center p-2 rounded-md text-gray-700 dark:text-gray-300 hover:text-primary-600 dark:hover:text-primary-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-primary-500 transition-colors duration-200"
-          aria-expanded="false"
-        >
-          <span class="sr-only">Open main menu</span>
-          <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
-          </svg>
-        </button>
       </div>
     </div>
 
-    <!-- Mobile Menu -->
-    <div id="mobile-menu" class="hidden md:hidden pt-4 pb-3 space-y-1">
-      {navLinks.map(link => (
-        <a
-          href={link.href}
-          class:list={[
-            "block px-3 py-2 rounded-md text-base font-medium transition-colors duration-200",
-            currentPath === link.href
-              ? "bg-primary-50 dark:bg-primary-900/30 text-primary-600 dark:text-primary-400"
-              : "text-gray-700 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-gray-700 hover:text-primary-600 dark:hover:text-primary-400"
-          ]}
-        >
-          {link.label}
-        </a>
-      ))}
-    </div>
   </nav>
 </header>
 
 <script>
-  const mobileMenuButton = document.getElementById('mobile-menu-button');
-  const mobileMenu = document.getElementById('mobile-menu');
+  // Auto-hide header on scroll down, show on scroll up (for mobile/tablet)
+  let lastScrollY = window.scrollY;
+  let ticking = false;
 
-  mobileMenuButton?.addEventListener('click', () => {
-    const isExpanded = mobileMenuButton.getAttribute('aria-expanded') === 'true';
-    mobileMenuButton.setAttribute('aria-expanded', (!isExpanded).toString());
-    mobileMenu?.classList.toggle('hidden');
+  function updateHeaderVisibility() {
+    const header = document.getElementById('main-header');
+    const currentScrollY = window.scrollY;
+
+    if (!header) return;
+
+    // Only apply auto-hide on mobile/tablet (below lg breakpoint)
+    if (window.innerWidth < 1024) {
+      if (currentScrollY > lastScrollY && currentScrollY > 100) {
+        // Scrolling down & past 100px - hide header
+        header.style.transform = 'translateY(-100%)';
+      } else {
+        // Scrolling up or at top - show header
+        header.style.transform = 'translateY(0)';
+      }
+    } else {
+      // Desktop - always show header
+      header.style.transform = 'translateY(0)';
+    }
+
+    lastScrollY = currentScrollY;
+    ticking = false;
+  }
+
+  function onScroll() {
+    if (!ticking) {
+      window.requestAnimationFrame(updateHeaderVisibility);
+      ticking = true;
+    }
+  }
+
+  // Listen for scroll events
+  window.addEventListener('scroll', onScroll, { passive: true });
+
+  // Reset on resize
+  window.addEventListener('resize', () => {
+    const header = document.getElementById('main-header');
+    if (header && window.innerWidth >= 1024) {
+      header.style.transform = 'translateY(0)';
+    }
   });
 </script>
